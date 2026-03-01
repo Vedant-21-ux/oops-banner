@@ -1,36 +1,16 @@
-public class OOPS {
-
+public class app {
     public static void main(String[] args) {
 
-        System.out.println(String.join("   ",
-                "* * *",
-                "* * *",
-                "*   *",
-                "* * * "
-        ));
+        String[] banner = new String[5];
 
-        System.out.println(String.join("   ",
-                "* * *",
-                "*   *",
-                "*   *",
-                "* * *"
-        ));
+        banner[0] = " *****   *****  *******  *****";
+        banner[1] = "*     * *     * *     *  *     ";
+        banner[2] = "*     * *     * *******  *****";
+        banner[3] = "*     * *     * *            *";
+        banner[4] = " *****   *****  *        *****";
 
-        System.out.println(String.join("   ",
-                "* * *",
-                "*   *",
-                "* * *",
-                "*   *",
-                "*    "
-        ));
-
-        System.out.println(String.join("   ",
-                "* * *",
-                "*    ",
-                "* * *",
-                "    *",
-                "* * *"
-        ));
-
+        for (int i = 0; i < banner.length; i++) {
+            System.out.println(banner[i]);
+        }
     }
 }
