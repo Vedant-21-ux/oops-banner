@@ -1,3 +1,25 @@
+// level 1, Q1
+    
+public class StudentInfo {
+    public static void main(String[] args) {
+
+        int birthYear = 2000;
+        int currentYear = 2024;
+        int age = currentYear - birthYear;
+        System.out.println("Harry's age in 2024 is " + age);
+
+//level 1, Q2
+        
+public class StudentInfo {
+    public static void main(String[] args) {
+        int maths = 94;
+        int physics = 95;
+        int chemistry = 96;
+        double average = (maths + physics + chemistry) / 3.0;
+        System.out.println("Sam's average mark in PCM is " + average);
+    }
+}
+
 //Level 1, Q3
 
 public class DistanceConverter {
@@ -64,3 +86,22 @@ public class TriangleArea {
 }
 
 
+//Level 3, Q1
+
+import java.util.Scanner;
+
+public class TemperatureConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the temperature in Celsius: ");
+
+        double celsius = scanner.nextDouble();
+
+        double fahrenheit = (celsius * 9/5) + 32;
+
+        System.out.println("The " + celsius + " celsius is " + fahrenheit + " in fahrenheit.");
+
+        scanner.close();
+    }
+}
